@@ -7,6 +7,7 @@ const cultbox = require('./plugins/cultbox');
  */
 module.exports = withPlugins([
   {
+    assetPrefix: process.env.NODE_ENV === 'production' ? '/cultbox-next' : '',
     env: {
       production: true,
     },
