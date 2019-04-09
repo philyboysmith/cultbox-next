@@ -5,4 +5,13 @@ const cultbox = require('./plugins/cultbox');
 /**
  * Config file for next.js
  */
-module.exports = withPlugins([{ target: 'serverless' }, css, cultbox, images]);
+module.exports = withPlugins([
+  {
+    env: {
+      production: true,
+    },
+  },
+  css,
+  cultbox,
+  images,
+]);

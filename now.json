@@ -2,6 +2,6 @@
     "version": 2,
     "name": "cultbox",
     "builds": [
-        { "src": "package.json", "use": "@now/next" }
+        { "src": "server.js", "use": "@now/node" }
     ]
 }
